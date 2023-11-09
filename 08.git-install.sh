@@ -7,3 +7,5 @@
  then
     echo "ERROR: Run this script wit ROOT user"
   fi  
+
+  yum install git -y
