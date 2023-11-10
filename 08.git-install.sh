@@ -7,7 +7,7 @@
  then
     echo "ERROR: Run this script with ROOT user"
  else   
-    echo "This script run by ROOT user"
+    echo "This script successfully run by ROOT user"
   fi  
 
   yum install git -y
