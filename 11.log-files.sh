@@ -11,7 +11,7 @@
         echo "$2... FAILURE"
         exit 1
     else
-        echo "$2... SUCCESS"
+        echo -e "\e[32m $2... SUCCESS"
     fi  
  }
 
