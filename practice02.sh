@@ -37,6 +37,6 @@ do
         yum install $i -y &>>$LOGFILE
         VALIDATE $? "$i"
     else    
-        ehco -e "$Y $i is already installed $N"
+        echo -e "$Y $i is already installed $N"
     fi
 done
