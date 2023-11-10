@@ -7,10 +7,10 @@
     #$1 ---> IT WILL RECEIVE THE ARGUMENT1
       if [ $? -ne 0 ]
     then
-        echo "Installation... FAILURE"
+        echo "$2... FAILURE"
         exit 1
     else
-        echo "Installation... SUCCESS"
+        echo "$2... SUCCESS"
     fi  
  }
 
