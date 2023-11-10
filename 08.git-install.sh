@@ -1,7 +1,7 @@
  #!/bin/bash
  # install git
 
- USERID=$(ID -U)
+ USERID=$(id -U)
 
  if [ $USERID -ne 0 ]
  then
