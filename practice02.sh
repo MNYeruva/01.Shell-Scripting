@@ -13,7 +13,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo -e \e[31m "ERROR::Please run the script with ROOT user"
+    echo -e "$R ERROR::Please run the script with ROOT user"
     exit 1
 fi    
 
