@@ -5,7 +5,7 @@
  # This Function should validate the previous command and inform user it is success OR failure
  VALIDATE(){
     #$1 ---> IT WILL RECEIVE THE ARGUMENT1
-      if [ $? -ne 0 ]
+      if [ $1 -ne 0 ]
     then
         echo "$2... FAILURE"
         exit 1
