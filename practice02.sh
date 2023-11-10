@@ -13,7 +13,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo -e \e[31m "ERROR::Please run the script with ROOR user"
+    echo -e \e[31m "ERROR::Please run the script with ROOT user"
     exit 1
 fi    
 
@@ -26,11 +26,11 @@ VALIDATE(){
         echo -e "Installing $2 ... $G Success $N"   
     fi     
 }
-#all arguements are in $@
+
 
 for i in $@
 do
-    yum list installed $id &>>$LOGFILE
+    yum list installed $i &>>$LOGFILE
     if [ $? -ne 0 ]
     then
         echo "$i is not installed. let's install..."
