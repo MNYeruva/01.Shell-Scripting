@@ -11,7 +11,7 @@ LOGFILE=$LOGSDIR/$0-$DATE.log
 FILES_TO_DELETE=$(find $APP_LOGS_DIR -name "*.log" -type f -mtime +30)
 
 echo "Script started to executing $DATE"
-echo "$FILES_TO_DELETE"
+#echo "$FILES_TO_DELETE"
 
 #While LOOP
 
