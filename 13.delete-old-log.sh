@@ -15,7 +15,6 @@ echo "$FILES_TO_DELETE"
 #While LOOP
 
 while read line 
-
 do
     echo "Deleting $line" &> $LOGFILE    #we write our statements here..
 done < $FILES_TO_DELETE   
