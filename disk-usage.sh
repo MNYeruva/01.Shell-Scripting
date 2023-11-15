@@ -30,6 +30,6 @@ do
     then
         MESSAGE+="High Disk Usage ON $PARTITION:$USAGE"
     fi    
-done >>> $DISK_USAGE
+done <<< $DISK_USAGE
 
-echo "$MESSAGE"
+echo "Message: $MESSAGE"
