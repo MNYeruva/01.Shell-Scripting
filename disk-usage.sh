@@ -34,4 +34,4 @@ done <<< $DISK_USAGE
 
 echo -e "Message: $MESSAGE"
 
-echo "$MESSAGE  Date $(date)" | mail -s "High Disk Usage Alert" info@mule.maha.com
+echo "$MESSAGE  Date $(date)" | mail -s "High Disk Usage Alert" info@mnyeruva.com
