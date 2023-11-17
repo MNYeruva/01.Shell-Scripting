@@ -14,4 +14,4 @@ FINAL_BODY=$(sed -e "s/TEAM_NAME/$TEAM_NAME/g" -e "s/ALERT_TYPE/$ALERT_TYPE/g" -
 
 #echo "$MESSAGE  Date $(date)" | mail -s "High Disk Usage Alert" info@mnyeruva.com
 
-echo "$FINAL_BODY" | mail -s "$SUBJECT" $TO_ADDRESS
+echo "$FINAL_BODY" | mail -s $"(echo -e "$SUBJECT\nContent-Type: text/html")" "$TO_ADDRESS"
